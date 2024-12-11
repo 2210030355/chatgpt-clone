@@ -1,0 +1,162 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: rgb(3, 0, 31);
+  color: white;
+  font-family: 'Poppins',sans-serif;
+}
+.App{
+  min-height: 100vh;
+  display: flex;
+}
+.sidebar{
+  flex:3;
+  border-right :  1px solid rgb(100,100,100);
+}
+.main{
+  flex:9
+}
+.logo{
+  margin-right: 1rem;
+}
+.brand{
+  font-size: 2rem;
+}
+.upperSide{
+  padding: 2.5rem;
+  border-bottom: 1px solid rgb(100,100,100);
+  height:70%;
+}
+.upperSideTop{
+  display: flex;
+  align-items: center;
+  margin: 2.5rem;
+}
+.addBtn{
+  height:2rem;
+  padding-right: 1rem;
+}
+.midBtn{
+  background-color: #5A4BFF;
+  border: no;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.query{
+  background-color: transparent;
+  border: no;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.query>img{
+  margin-right: 2rem;
+  object-fit: cover;
+  height:1.75rem;
+}
+.lowerside{
+  padding: 2rem;
+}
+.listItems{
+  align-items: center;
+  font-size: 1.3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 33.3%;
+  display: flex;
+  margin: 0.75rem;
+}
+.listItemsImg{
+  margin: 1rem;
+  padding-right: 1rem ;
+}
+.listItems:nth-child(1)>.listItemsImg{
+  margin-right: 0.5rem;
+}
+.listItems:nth-child(3)>.listItemsImg{
+  margin-right: 0.75rem;
+}
+.main{
+  min-height: calc(100vh - 14rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 6rem 10rem;
+  margin-bottom: 0;
+}
+.chats{
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh - 17rem);
+}
+.chat{
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+.chatimg{
+  object-fit: cover;
+  width: 6rem;
+  margin-right: 2.5rem;
+  border-radius: 0.5rem;
+}
+.bot{
+  background: rgba(28,30,58,1);
+  width: fit-content;
+  border-radius: 0.5rem;
+}
+.chatFooter{
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inp{
+  padding: 0.5rem;
+  background-color: rgba(28,30,58,1);
+  display: flex;
+  align-items: center;
+  background-origin: 0.5rem;
+  width:70rem
+}
+.inp>input{
+  width:calc(100% - 3rem);
+  outline: none;
+  padding: 1.25rem;
+  color: white;
+}
+.inp>input ,.send{
+  background: transparent;
+  border: none;
+}
+.chatFooter>p{
+  margin: 2rem;
+}
