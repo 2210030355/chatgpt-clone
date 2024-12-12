@@ -9,8 +9,8 @@ const openai = new OpenAIApi(configuration);
 export async function sendMsgToOpenai(message) {
     const res = await openai.createCompletion({
         model: 'text-davinci-003',
-        prompt: message, // Pass the actual message
-        temperature: 0.7, // Corrected value type
+        prompt: message, 
+        temperature: 0.7, 
         max_tokens: 256,
         top_p: 1,
         frequency_penalty: 0,
